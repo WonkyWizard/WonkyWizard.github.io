@@ -1,15 +1,90 @@
-<html>
-<head><title>.::Wonky Wizard Website::.</title></head>
-<body margin="25px" bgcolor="cccccc">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Wonky Wizard Website</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
 
-<p>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-  <h1>.::<a href="https://wonkywizard.github.io/">Wonky Wizard Website</a>::.</h1>
+/* Style the header */
+header {
+  background-color: #777;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
 
-</p>
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
 
- <p>
-  <h3>2020.07.08: Installed Godot for first time.</h3>
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Wonky Wizard Website</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="https://wonkywizard.github.io/">Home</a></li>
+      <li><a href="https://wonkywizard.github.io/godot/index.html">Godot Demo Page</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+  <h1>2020.07.08: Installed Godot for first time.</h1>
    <ol>
      <li>Downloaded the <a href="https://godotengine.org/asset-library/asset/120">officially created Platformer 3D demo</a> from their site.</li>
      <li>Tested the game in Godot game engine.</li>
@@ -21,24 +96,27 @@
      <li>Imported 3D Mech into Godot.</li>
      <li>Results Follow</li>
   </ol>
-  <h3>2020.07.09: Updates to this webpage with above ordered list and some formatting/colors.</h3>
-<p>
+  <h1>2020.07.09: Updates to this webpage with above ordered list and some formatting/colors.</h1>
 
-<h2>'Playable' Godot Produced Demo (Click Image)</h2>
+
+  <h1>'Playable' Godot Produced Demo (Click Image)</h1>
 <a href="demo/index.html">
 <img src="demo/Platformer2D - ScreenShot.png" width="560" height="315" />
 </a>
-  
-</p>
-  
-<p>
-<h2>YouTube Demo showing Blender created mech imported into Godot</h2>
+
+
+    <h1>YouTube Demo showing Blender created mech imported into Godot</h1>
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/kYdJFrDp38A" frameborder="0" 
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</p>
+    </article>
   
-  
-<hr />
-<h4>&copy; 2020 Copyright: All Rights Reserved - All Wrongs Avenged</h4>
-Thrown together with reckless abandon,  without 'tools', using long dormant html knowlege.
-</body></html>
+</section>
+
+<footer>
+  <p>
+Thrown together with reckless abandon,  without 'tools', using long dormant html knowlege.<br />
+&copy; 2020 Copyright: All Rights Reserved - All Wrongs Avenged</p>
+</footer>
+
+</body>
+</html>
