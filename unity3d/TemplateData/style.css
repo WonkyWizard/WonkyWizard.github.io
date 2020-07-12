@@ -1,0 +1,31 @@
+* {border: 0; margin: 0; padding: 0}
+.webgl-content {position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
+
+.webgl-content .logo, .progress {position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
+.webgl-content .logo {background: url('progressLogo.Light.png') no-repeat center / contain; width: 154px; height: 130px;}
+.webgl-content .progress {height: 18px; width: 141px; margin-top: 90px;}
+.webgl-content .progress .empty {background: url('progressEmpty.Light.png') no-repeat right / cover; float: right; width: 100%; height: 100%; display: inline-block;}
+.webgl-content .progress .full {background: url('progressFull.Light.png') no-repeat left / cover; float: left; width: 0%; height: 100%; display: inline-block;}
+
+.webgl-content .logo.Dark {background-image: url('progressLogo.Dark.png');}
+.webgl-content .progress.Dark .empty {background-image: url('progressEmpty.Dark.png');}
+.webgl-content .progress.Dark .full {background-image: url('progressFull.Dark.png');}
+
+.header {height: 32px; line-height: 32px; font-family: Helvetica, Verdana, Arial, sans-serif; font-size: 32px;} 
+.header .title, .fullscreen {height: 100%; display: inline-block; background: transparent center no-repeat;} 
+.header .title {float: left; color: red; font-weight: bold;}
+.header .fullscreen {background-image: url(fullscreen.png); width: 28px; height: 28px; float: right;}
+/* William Harris - 180816 */
+a img :active, :focus {outline: none; -moz-outline-style: none;}
+body {
+	background-color: #000;
+	background-image: url(deadpool.png), url(domino.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: left bottom, right bottom;
+	background-size: contain;
+	}
+.copy {
+	font-family: Helvetica, Verdana, Arial, sans-serif; font-size: 1em; color: red; font-weight: bold;
+	position: absolute; left: 50%; bottom: 0%; -webkit-transform: translate(-50%, 0%); transform: translate(-50%, 0%);
+	}

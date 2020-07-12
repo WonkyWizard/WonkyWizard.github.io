@@ -1,0 +1,14 @@
+{
+"companyName": "DefaultCompany",
+"productName": "CntDown2GameOver",
+"dataUrl": "CntDwn2GameOvrWGL.data.unityweb",
+"asmCodeUrl": "CntDwn2GameOvrWGL.asm.code.unityweb",
+"asmMemoryUrl": "CntDwn2GameOvrWGL.asm.memory.unityweb",
+"asmFrameworkUrl": "CntDwn2GameOvrWGL.asm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"backgroundUrl": "CntDwn2GameOvrWGL.jpg",
+"splashScreenStyle": "Light",
+"backgroundColor": "#FFFFFF"
+}
