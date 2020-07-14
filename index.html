@@ -37,35 +37,49 @@ nav {
   flex: 1;
   background: #ccc;
   padding: 0px;
+  position: relative;
+  overflow: hidden;
 }
 
-/* Style the list inside the menu */
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  background-color: #ccc;
-}
-
-nav li a {
+nav a {
   display: block;
-  color: #000;
-  padding: 8px 16px;
+  position: absolute;
+  right: -150px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 180px;
   text-decoration: none;
-  font-weight: bold;
-  text-align:right;
-}
-
-nav li a.active {
-  background-color: #f1f1f1;
-  color: #000000;
-}
-
-nav li a:hover:not(.active) {
-  background-color: #337733;
+  text-align:center;
+  font-size: 20px;
   color: white;
+  background-color: #2196F3;
+  border-radius: 5px 0 0 5px;
+}
+
+nav a:hover {
+  right: 0px;
+}
+
+nav a.active {
+  right: 0px;
+  color: black;
+  background-color: #f1f1f1;
+}
+
+#welcome {
+  top: 10px;
+}
+
+#godot {
+  top: 70px;
+}
+
+#devlog {
+  top: 130px;
+}
+
+#about {
+  top: 190px;
 }
 
 /* Style the content */
@@ -128,10 +142,10 @@ footer {
 
 <section>
   <nav>
-    <ul>
-      <li><a class="active" href="https://wonkywizard.github.io/">Home&nbsp;&#62;</a></li>
-      <li><a href="https://wonkywizard.github.io/godot/index.html">Godot&nbsp;Demo</a></li>
-    </ul>
+      <a id="welcome" class="active" href="https://wonkywizard.github.io/">Welcome</a>
+      <a id="godot" href="https://wonkywizard.github.io/godot/index.html">Godot&nbsp;Demo</a>
+      <a id="devlog" href="https://wonkywizard.github.io/devlog.html">DevLog</a>
+      <a id="about" href="https://wonkywizard.github.io/about.html">About</a>
   </nav>
   
   <article>
@@ -168,8 +182,8 @@ Until then, check out the Godot demo link in the menu.
   
   <!- Side Bar ->
   <aside>
-    <img src="assets/TrueLove.png" style="opacity: 0.5" />
-    <img id="OctoWizard" src="assets/OctoWizard-west-small.png" width="225" height="225" />
+    <img src="assets/pics/TrueLove.png" style="opacity: 0.5" />
+    <img id="OctoWizard" src="assets/picsOctoWizard-west-small.png" width="225" height="225" />
   </aside>
   
 </section>
