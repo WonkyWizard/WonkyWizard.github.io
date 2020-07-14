@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DOH! 404</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the header */
+header {
+  background-color: #777;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 0px;
+  position: relative;
+  overflow: hidden;
+}
+
+nav a {
+  display: block;
+  position: absolute;
+  right: -150px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 180px;
+  text-decoration: none;
+  text-align:center;
+  font-size: 20px;
+  color: white;
+  background-color: #2196F3;
+  border-radius: 5px 0 0 5px;
+}
+
+nav a:hover {
+  right: 0px;
+}
+
+nav a.active {
+  right: 0px;
+  color: black;
+  background-color: #f1f1f1;
+}
+
+#welcome {
+  top: 10px;
+}
+
+#godot {
+  top: 70px;
+}
+
+#unity3d {
+  top: 130px;
+}
+
+#devlog {
+  top: 190px;
+}
+
+#about {
+  top: 250px;
+}
+
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+#FossMap {
+  padding: 5px; 
+  width: 560px;
+  height: 926px; 
+  border-radius: 25px;
+  background: #000077;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  }
+#FossMap:hover { background: #00aa00; }
+#FossMap a.hover { background: #00aa00; }
+#FossMap a.active { background: #00aa00; }
+  
+.center {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+
+/* Style the Side Bar */
+aside {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background-color: #ccc;
+  padding: 10px;
+}
+#OctoWizard { position: fixed; right: 1%; bottom: 0px; background-color: rgba(0,0,0,0) !important;
+      -webkit-border-radius:0 !important;-moz-border-radius:0 !important;border-radius:0 !important;
+      -webkit-box-shadow:none !important;
+      -moz-box-shadow:none !important;
+       box-shadow:none !important;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Wonky Wizard Website</h2>
+</header>
+
+
+
+
+<!-- class="active" &nbsp;&#62;m-->
+<section>
+  <nav>
+      <a id="welcome" href="https://wonkywizard.github.io/">Welcome</a>
+      <a id="godot" href="https://wonkywizard.github.io/godot">Godot&nbsp;Demo</a>
+      <a id="unity3d" href="https://wonkywizard.github.io/unity3d">Unity3D</a>
+      <a id="devlog" href="https://wonkywizard.github.io/devlog.html">DevLog</a>
+      <a id="about" href="https://wonkywizard.github.io/about.html">About</a>
+  </nav>
+  
+  <article>
+
+
+
+
+<div class="center">
+
+  <h1>DOH! 404 File Not Found</h1>
+<img src="assets/pics/RockHard.gif" />
+
+  <p>
+
+You kinda got me between a rock and a hard place here...
+<br />
+How about give it some time and hit refresh or 
+<br />
+try another menu item in one of 'dem blue tab thingies...
+<br />
+Check the DevLog and maybe I put some information in it 
+<br />
+that will say what I'm up to...probably not...but it 
+<br />
+may say something that's better than looking at this 
+<br />
+rambling non-sense I used to make the page long enough 
+<br />
+so all the items didn't squish together...
+<br />
+DOH! I just revealed one of those things web 
+<br />
+devs have to do to make their page layouts look decent...
+<br />
+I'll probably be in trouble with all the other webdev 
+<br />
+folks if you show them this page, so let's keep this 
+<br />
+our little secret...
+
+    </p>
+
+</div>
+
+
+  </article>
+  
+  <!- Side Bar ->
+  <aside>
+    <img src="assets/pics/TrueLove.png" style="opacity: 0.5" />
+    <img id="OctoWizard" src="assets/pics/OctoWizard-west-small.png" width="225" height="225" />
+  </aside>
+  
+</section>
+
+<footer>
+  <p>
+Thrown together with reckless abandon,  without 'tools', using long dormant html knowlege.<br />
+2020 &copy; Copyright: All Rights Reserved - All Wrongs Avenged</p>
+</footer>
+
+</body>
+</html>
