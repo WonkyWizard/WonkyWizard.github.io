@@ -37,42 +37,78 @@ nav {
   flex: 1;
   background: #ccc;
   padding: 0px;
+  position: relative;
+  overflow: hidden;
 }
 
-/* Style the list inside the menu */
+nav a {
+  display: block;
+  position: absolute;
+  right: -150px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 180px;
+  text-decoration: none;
+  text-align:center;
+  font-size: 20px;
+  color: white;
+  background-color: #2196F3;
+  border-radius: 5px 0 0 5px;
+}
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 100%;
+nav a:hover {
+  right: 0px;
+}
+
+nav a.active {
+  right: 0px;
+  color: black;
   background-color: #f1f1f1;
 }
 
-nav li a {
-  display: block;
-  color: #000;
-  padding: 8px 16px;
-  text-decoration: none;
-  text-align:right;
+#welcome {
+  top: 10px;
 }
 
-nav li a.active {
-  background-color: #4CAF50;
-  color: white;
+#godot {
+  top: 70px;
 }
 
-nav li a:hover:not(.active) {
-  background-color: #555;
-  color: white;
+#unity3d {
+  top: 130px;
+}
+
+#devlog {
+  top: 190px;
+}
+
+#about {
+  top: 250px;
 }
 
 /* Style the content */
 article {
-  -webkit-flex: 4;
-  -ms-flex: 4;
-  flex: 4;
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
   background-color: #f1f1f1;
+  padding: 10px;
+}
+#FossMap {
+  padding: 5px; 
+  width: 560px;
+  height: 926px; 
+  border-radius: 25px;
+  background: #000077;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  }
+#FossMap:hover { background: #00aa00; }
+#FossMap a.hover { background: #00aa00; }
+#FossMap a.active { background: #00aa00; }
+  
+.center {
+  margin: auto;
+  width: 60%;
   padding: 10px;
 }
 
@@ -110,44 +146,29 @@ footer {
 </head>
 <body>
 
-<header>
-  <h2>Wonky Wizard Website</h2>
-</header>
+<header><h2>Wonky Wizard Website</h2></header>
 
 <section>
   <nav>
-    <ul>
-      <li><a href="https://wonkywizard.github.io/">Home</a></li>
-      <li><a class="active" href="https://wonkywizard.github.io/godot/index.html">Godot Demo</a></li>
-    </ul>
+      <a id="welcome" href="https://wonkywizard.github.io">Welcome</a>
+      <a id="godot" class="active" href="https://wonkywizard.github.io/godot">Godot&nbsp;Demo</a>
+      <a id="unity3d" href="https://wonkywizard.github.io/unity3d">Unity3D</a>
+      <a id="devlog" href="https://wonkywizard.github.io/devlog.html">DevLog</a>
+      <a id="about" href="https://wonkywizard.github.io/about.html">About</a>
   </nav>
   
-  <article>
-  <h1>2020.07.08: Installed Godot for first time.</h1>
-   <ol>
-     <li>Downloaded the <a href="https://godotengine.org/asset-library/asset/120">officially created Platformer 3D demo</a> from their site.</li>
-     <li>Tested the game in Godot game engine.</li>
-     <li>Exported as WebGL/HTML5</li>
-     <li>Created GitHub account and this site.</li>
-     <li>Uploaded the WebGL demo to this site.</li>
-     <li>Satisfied with results proceeded to test #2</li>
-     <li>Exported 3D Mech animated 'chicken walker' from Blender</li>
-     <li>Imported 3D Mech into Godot.</li>
-     <li>Results Follow</li>
-  </ol>
-  <h1>2020.07.09: Updates to this webpage with above ordered list and some formatting/colors.</h1>
+   <article><div class="center">
 
+  <h1>Test to Determine Usability of Godot</h1>
+     
+  <h2>'Playable' Godot Produced Demo (Click Image)</h2>
+     <a href="demo"><img src="demo/Platformer2D - ScreenShot.png" width="560" height="315" /></a>
 
-  <h1>'Playable' Godot Produced Demo (Click Image)</h1>
-<a href="demo/index.html">
-<img src="demo/Platformer2D - ScreenShot.png" width="560" height="315" />
-</a>
+  <h2>YouTube Demo showing Blender created mech imported into Godot</h2>
+     <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/kYdJFrDp38A" frameborder="0" 
+     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
-    <h1>YouTube Demo showing Blender created mech imported into Godot</h1>
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/kYdJFrDp38A" frameborder="0" 
-allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </article>
+     </div></article>
   
   <!- Side Bar ->
   <aside>
