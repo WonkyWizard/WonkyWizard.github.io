@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DevLog for Wonky's World</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the header */
+header {
+  background-color: #777;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 0px;
+  position: relative;
+  overflow: hidden;
+}
+
+nav a {
+  display: block;
+  position: absolute;
+  right: -150px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 180px;
+  text-decoration: none;
+  text-align:center;
+  font-size: 20px;
+  color: white;
+  background-color: #2196F3;
+  border-radius: 5px 0 0 5px;
+}
+
+nav a:hover {
+  right: 0px;
+}
+
+nav a.active {
+  right: 0px;
+  color: black;
+  background-color: #f1f1f1;
+}
+
+#welcome {
+  top: 10px;
+}
+
+#godot {
+  top: 70px;
+}
+
+#unity3d {
+  top: 130px;
+}
+
+#devlog {
+  top: 190px;
+}
+
+#about {
+  top: 250px;
+}
+
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+article h1 { font-size: 25px; }
+article h2 { font-size: 17px; }
+
+#FossMap {
+  padding: 5px; 
+  width: 560px;
+  height: 926px; 
+  border-radius: 25px;
+  background: #000077;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  }
+#FossMap:hover { background: #00aa00; }
+#FossMap a.hover { background: #00aa00; }
+#FossMap a.active { background: #00aa00; }
+  
+.center {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+
+/* Style the Side Bar */
+aside {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background-color: #ccc;
+  padding: 10px;
+}
+#OctoWizard { position: fixed; right: 1%; bottom: 0px; background-color: rgba(0,0,0,0) !important;
+      -webkit-border-radius:0 !important;-moz-border-radius:0 !important;border-radius:0 !important;
+      -webkit-box-shadow:none !important;
+      -moz-box-shadow:none !important;
+       box-shadow:none !important;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Wonky Wizard Website</h2>
+</header>
+
+
+
+
+<!-- class="active" &nbsp;&#62;m-->
+<section>
+  <nav>
+      <a id="welcome" href="https://wonkywizard.github.io/">Welcome</a>
+      <a id="godot" href="https://wonkywizard.github.io/godot">Godot&nbsp;Demo</a>
+      <a id="unity3d" href="https://wonkywizard.github.io/unity3d">Unity3D</a>
+      <a id="devlog" class="active" href="https://wonkywizard.github.io/devlog.html">DevLog</a>
+      <a id="about" href="https://wonkywizard.github.io/about.html">About</a>
+  </nav>
+  
+<article><div class="center">
+
+<h1>DevLog for Wonky's World</h1>
+<img src="assets/pics/RockHard.gif" />
+
+<!-- ###################################### ADD NEW CONTENT HERE ################################## -->
+
+
+
+
+
+
+
+<h2>2020.07.14 - 2020.07.15</h2>
+  <ul>
+  <li>More Work on Website</li>
+  <li>Added 404.page</li>
+  <li>Added new Menu</li>
+  <li>Tweeked Formating & Colors</li>
+  <li>Moved Development Progress from Godot Demo Page to this DevLog</li>
+  <ul>
+
+<h2>2020.07.13 - Took a day off to Sleep</h2>
+
+<h2>2020.07.09 - 2020.07.12</h2>
+  <ul>
+  <li>Worked on Website</li>
+  <li>Added <a href="https://wonkywizard.github.io/unity3d">Unity3D Demo</a> from 2018 SGD Homework</li>
+  <li>Too Many More Changes to Remember</li>
+  <li>Check <a href="https://github.com/WonkyWizard">GitHub Profile</a> (kinda what it's for.)</li>
+  </ul>
+
+<h2>2020.07.09: Updates to Website</h2>
+  <ul>
+  <li>Got a couple of pages going</li>
+  <li>Did some formatting on the two pages.</li>
+  <li>Threw some basic colors on the two pages.</li>
+  </ul>
+
+<h2>2020.07.08: Installed Godot for first time.</h2>
+  <ol>
+  <li>Downloaded the <a href="https://godotengine.org/asset-library/asset/120">officially created Platformer 3D demo</a> from their site.</li>
+  <li>Tested the game in Godot game engine.</li>
+  <li>Exported as WebGL/HTML5</li>
+  <li>Created GitHub account and this site.</li>
+  <li>Uploaded the WebGL demo to this site.</li>
+  <li>Satisfied with results proceeded to test #2</li>
+  <li>Exported 3D Mech animated 'chicken walker' from Blender.</li>
+  <li>Imported 3D Mech into Godot.</li>
+  </ol>
+  
+</p></div></article>
+  
+  <!- Side Bar ->
+  <aside>
+    <img src="assets/pics/TrueLove.png" style="opacity: 0.5" />
+    <img id="OctoWizard" src="assets/pics/OctoWizard-west-small.png" width="225" height="225" />
+  </aside>
+  
+</section>
+
+<footer>
+  <p>
+Thrown together with reckless abandon,  without 'tools', using long dormant html knowlege.<br />
+2020 &copy; Copyright: All Rights Reserved - All Wrongs Avenged</p>
+</footer>
+
+</body>
+</html>
